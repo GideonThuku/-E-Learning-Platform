@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuberi Academy | Modern E-Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Zuberi Academy</a>
+            <div id="auth-links">
+                <button class="nav-btn" id="login-btn">Login</button>
+                <button class="nav-btn signup" id="signup-btn">Sign Up</button>
+            </div>
+            <div id="user-info" class="hidden">
+                <span id="welcome-msg"></span>
+                <button class="nav-btn" id="logout-btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Unlock Your Potential</h1>
+            <p>Our courses are designed to transform your skills and launch your career. Join a community of learners and innovators.</p>
+            <a href="#course-section" class="cta-btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <main id="course-section" class="container">
+        <h2>Available Courses</h2>
+        <div id="course-list" class="course-grid">
+            </div>
+    </main>
+
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+    
+    <div id="auth-modal" class="modal">
+        <div class="modal-content auth-form-container">
+            <span class="close-button auth-close">&times;</span>
+            <div id="login-form">
+                <h2>Welcome Back!</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Login</button>
+                </form>
+                <p>Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </div>
+            <div id="signup-form" class="hidden">
+                 <h2>Create Your Account</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Create Account</button>
+                </form>
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Zuberi Academy. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
