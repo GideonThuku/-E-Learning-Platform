@@ -5,6 +5,8 @@ This is a single-page, responsive web application for an online learning academy
 It features a course catalog, course detail modals, and a simple client-side login/authentication simulation.
 
 ---
+View the Live Website here: https://e-learning-platform-rexu.vercel.app/
+---
 
 ## ✨ Features
 
